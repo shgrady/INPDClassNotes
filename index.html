@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Stage 1 by Sarah Hodson Grady</title>
+    <link rel="stylesheet" href="css/style.css">
+	<!--Corrected missing "=" for stylesheet link type-->
+	<!--first reviewer had me add the type, second reviewer says I can skip-->
+</head>
+<body>
+	<!--not adding article designations, this is not an article, selecting 
+	container elements for specific parts of 3 lessons-->
+    <div class="lesson">
+  		<div class="lessontitle">
+    		<h1>Lesson 1 - The basics of the web</h1>
+		</div>
+  		<div class="lessonintro">
+			<p>
+				The World Wide Web is composed primarily of HTML documents, 
+				linked together with hyperlinks creating the "web" concept.
+			</p>
+  		</div>
+  		<div class="conceptheader">
+    		<h2>HTML - HyperText Markup Language, the basis of everything on the web.</h2>
+		</div>
+  		<div class="textnotes">
+			<ul class="fancynewlist">
+				<li>-text content (what you see)</li>
+				<li>-markup (what it looks like)</li>
+    			<li>-references to other documents (e.g. images and videos)</li>
+    			<li>-links to other pages</li>
+			</ul>
+   		</div>
+  		<div class="conceptheader">
+			<h2>HTML Markup</h2>
+		</div>
+  		<div class="textnotes">
+			Contents are surrounded by opening and closing tags which can be a source of errors 
+			if a closing tag is forgotten. Most text editors automatically create a closing tag 
+			when an opening tag is created to prevent this.
+  		</div>
+  			<br>
+  		<div class="tagnotes">
+    		<br> <!--Not supposed to indent inline elements according to developer reference, but it sure makes
+			it easier for me to read?-->
+				<b>Contents appear in bold when surrounded by b tags</b>
+    		<br>
+				<em>Contents appear in italics when surrounded with an em tag</em>
+    		<p>
+				The format TAG ATTR="value" is used for an Anchor tag a - link
+			</p>
+				<a href="http://www.logansportmemorial.org">here is an example</a>
+    		<br>
+    		<br>
+				img - images tag
+    		<img src="url" alt="not required but kind to to the blind or any user if the image fails to load">
+    	<!--One reviewer congratulated me on this note, another got into semantics over kindness v. necessity 
+		for accessibility to the blind. Unkindness is as unacceptable as Helen Keller jokes, rewording for Jen-->
+			<br>
+				Void tag does not require close tags; br and img are void tags.
+	    	<br>
+				br is an inline element
+    		<p> 
+				p is not a void tag
+			</p>
+    		<p> 
+				- block element (can have height and width, first of this type today)
+			</p>
+      		<p>
+				Style may affect choices here (note video example of font change)
+			</p>
+				Span/div
+      		<br>
+				&#60;span class="foo"> CSS class foo invoked here in this inline element
+      		<br>
+				div is a block element
+      		<br>
+				<strong>strong inline</strong>
+      		<form> 
+				form is a block element
+			</form>
+  		</div>
+  		<div class="conceptheader">
+			<h2>Complete HTML Documents simplified by HTML5</h2>
+		</div>
+  		<div class="textnotes">
+			for simplified doctype, header with title, metadata, CSS, JS
+  		</div>
+  		<div class="conceptheader">
+			<h2><em>Major Pieces</em> of the web include</h2>
+		</div>
+  		<div class="textnotes">
+				You
+    		<br>
+				Your computer and browser
+    		<br>
+				The internet (pictured as a cloud)
+    		<br>
+				Servers (optimized for sitting in closets, storing the files you access)
+		</div>
+  		<div class="interestingtext">
+			<p> 
+				HTTP - simple protocol your browser uses to communicate with the servers
+			</p>
+		</div>
+  		<div class="footer">
+			<em>Web Applications = The Grand Finale</em>
+		</div>
+	</div>
+	<div class="lesson">
+  		<div class="lessontitle">
+    		<h1>Lesson 2 - Creating structured documents</h1>
+  		</div>
+  		<div class="lessonintro">
+    		<p>
+				Front end web development is a very rewarding place to start programming because your results are visual.
+			</p>
+  		</div>
+  		<div class="conceptheader">
+			<h2>Web pages are composed of three languages:</h2>
+		</div>
+  		<div class="textnotes">
+      		<ul class="list">
+				<li>HTML - Content of the Page</li>
+				<li>CSS - Style or theme, also allows for a consistent look and feel</li>
+				<li>JS - Interactive code producing the functions of the page</li>
+			</ul>
+        </div>
+  		<!--<div class="citednotes">
+    		<span class="cnotes">• HTML and CSS are both "languages"</span>
+    		<span class="cnotes">• HTML controls the "structure" of a web page</span>
+    		<span class="cnotes">• CSS controls the "style" of a page (how it looks).</span>
+    		<span class="cnotes">• When programmers talk about the "DOM" (Document Object Model) 
+			they are talking about the tree-like structure of a page.</span></div>
+  		-->
+    
+			<ul class="citednotes">
+				<li class="cnotes">HTML and CSS are both "languages"</li>
+				<li class="cnotes">HTML controls the "structure" of a web page</li>
+				<li class="cnotes">CSS controls the "style" of a page (how it looks).</li>
+				<li class="cnotes">When programmers talk about the "DOM" (Document Object Model) they are talking about the tree-like structure of a page</li>
+			</ul>
+		<div class="cite link">
+      		<br>
+				From <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-4137489485/m-3589008625">
+				https://www.udacity.com/course/viewer#!/c-nd000/l-4137489485/m-3589008625</a>
+	  			<!--Watch out for cutting and pasting into One Note, which applies <source url>-->
+		<div class="cite link">
+			<p>
+				I was a little unsure about the DOM from the class information, but found a good explanation here: 
+				<a href="https://css-tricks.com/dom/">Good references at the bottom of this page.</a>
+				The biggest take away from all of it, is no matter what platform you are using, the structure of tree allows
+				you to gather, and therefore manipulate information. I work in clinical informatics, where structured data is useful and relavant,
+				and free text does nobody any good except the person reading it. We say that because "structured data" is reportable/queryable.
+				The structure in EHRs is very different between EHRs, some even use hierarchical databases rather than relational. 
+				The DOM of html documents seems to allow for a consistency of form, making APIs a lot more common than EHRs that can talk.
+			</p>		
+		</div>
+  			<br/>
+		<div class="list">
+			Each tag can be empty, contain text or another tag.
+    		<br>
+			Tags can include attributes and the values of those attributes:
+    		<br>
+			EXAMPLE &#60;h1 class="article"> where article is the value of the class attribute. </div>
+				<!--Added semicolon to the end of the 4 &#60 that I had used, problem with using google, 
+				not mentioned on the site I found that on and worked fine on my singular file-->
+		</div>
+			<br/>
+	</div>
+	<div class="lesson">
+		<div class="lessontitle">
+    		<h1>Lesson 3 - Adding CSS and Style</h1>
+  		</div>
+		<div class="listwithtitle">
+			<div class="listtitle">
+		  		<h2>Tools we will be using in Nanodegree</h2>
+			</div>
+			<div class="list">
+		  		<ul>
+					<li>Scratchpad - I skipped because I already had a CodePen account</li>
+		  			<li>Codepen - see above</li>
+		  			<li>Notepad++ - have used more than Sublime Text2</li>
+		  			<li>Sublime Text 2 - my preview is up, switched to Sublime Text 3, feel a little guilty about the unenforced trial period</li>
+					<li>Visual Basic - not used in this class, but helpful, more responsive with preventing code typos, also has nice indenting features as opposed to doing manually.</li>
+		  			<li>Python - already downloaded for another class</li>
+		  			<li>Google App Engine - heard of, never used before. 60 day free trial.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="listwithtitle">
+			<h2>Steps to do when linking a stylesheet</h2>
+				<ol>
+					<li>Add &#60;!DOCTYPE html></li>
+  					<li>Enclose all the rest of the code within &#60;html> tags.</li>
+  					<li>Add a head enclosure to contain a link to the style sheet.</li>
+  					<li>Enclose the rest of the code within body tags.</li>
+				</ol>
+				Visual Basic will create this structure for you which is probably why we are using a simpler tool.</div>
+		<div class="subtitled">
+			<h2>Cascading Style Sheets Analogy</h2>
+		<div class="lawspan">	
+			<span class="laws">National Laws--></span>
+			<span class="laws">State Laws--></span>
+			<span class="laws">Municipality Laws--></span>
+  			<span class="laws">House Rules</span></div>
+			<br>
+			Unlike in our country where the top rule applies, in CSS, the most specific rule applies
+		</div>
+		<div class="subtitled">
+			<h2>Selectors</h2>
+		<div class="textnotes">
+				One option is to define elements in the style sheet: 
+				<pre>
+p {
+define paragraph style elements here
+}
+				</pre> <!--Indents mess with the preserved formatting-->
+		<br>
+			Alternatively define classes in the style sheet:
+				<pre> 
+.classname {
+	article:value;
+}
+				</pre>
+		</div>
+		<div class="subtitled">
+			<h2>Box Sizing and Positioning</h2>
+		</div>
+		<div class="textnotes">
+			box-sizing: border-box;
+			<br>
+				alternatively, set sizes in terms of percentages instead of pixels.
+			<br>
+				display: flex; allows divs to appear next to each other.
+			<br>
+				<a href="http://learn-2-code.appspot.com/additional_resources/#topic-1">Example webpage from the class</a>
+		</div>
+	</div>
+</div> 
+<div>
+	<p>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    		<img style="border:0;width:88px;height:31px"
+        	src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        	alt="Valid CSS!" />
+    	</a>
+    </p>
+</div>
+</body>
+</html>

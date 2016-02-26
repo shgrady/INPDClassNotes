@@ -1,0 +1,41 @@
+.lessontitle{
+  	font-family: sans-serif;
+  	color: #7733ff;
+  	border: 5px solid pink;
+  	padding: 10px;
+}
+
+.list{
+  	font-style: italic;
+}
+
+.lesson{
+    width: 80%;
+    padding: 25px;
+    border: 25px solid cyan;
+    margin: 25px;    
+}
+
+.textnotes{
+    background-color: gray;
+    color: white;
+    padding: 1px;
+}
+
+.tagnotes,.list{
+    border: 10px outset #aa80ff;
+    padding: 20px;
+	margin: inherit;
+}
+
+.citednotes{
+  display: flex;
+}
+
+.laws{
+  border: 1px dotted;
+}
+
+.cnotes{
+	margin: 10px;
+}
